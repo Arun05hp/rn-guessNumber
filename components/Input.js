@@ -1,14 +1,16 @@
 import React from "react";
 import { TextInput, StyleSheet } from "react-native";
 
-const Input = ({ style }) => {
+const Input = ({ style, onChangeText, value }) => {
   return (
     <TextInput
       blurOnSubmit
       autoCapitalize="none"
       autoCorrect={false}
-      keyboardType="numeric"
+      keyboardType="number-pad"
       maxLength={2}
+      onChangeText={onChangeText}
+      value={value}
       style={{ ...styles.Input, ...style }}
     />
   );
