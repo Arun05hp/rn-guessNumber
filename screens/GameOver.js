@@ -6,6 +6,7 @@ import {
   Image,
   Dimensions,
   ScrollView,
+  SafeAreaView,
 } from "react-native";
 import BodyText from "../components/BodyText";
 import TitleText from "../components/TitleText";
